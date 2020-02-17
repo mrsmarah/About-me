@@ -3,7 +3,7 @@ var username = prompt("Hello, it's Marah! What's your name ?");
 alert("Welcome to my page "+ username +" ! ");
 console.log("Welcome to my page "+ username +" ! ");
 
-var favColor = prompt("Does pink is my favorite color ?");
+var favColor = prompt("Let's see if you can guess these questions: Does pink is my favorite color ?");
 if (favColor.toLocaleLowerCase() === "yes" || favColor.toLocaleLowerCase() === "y") {
     alert("Nope "+ username + ", White is my favorite.");
 }

@@ -104,6 +104,10 @@ if ( favCity.toLocaleLowerCase() === city[0] || favCity.toLocaleLowerCase() === 
 {
     alert('true');
     score = score + 1 ;
+   
+    if (j == 5){
+        alert('No more attempts! these are my favorite cities: salt, amman, irbid, madaba.');
+    }
 
 }
 else {

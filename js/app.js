@@ -100,7 +100,10 @@ for( var i = 0 ; i < 4 ; i++ ){
 
 var city = ['salt','amman','irbid','madaba']
 var favCity = prompt('What is my Favorite city in jordan ?');
-if ( favCity.toLocaleLowerCase() === city[0] || favCity.toLocaleLowerCase() === city[1]|| favCity.toLocaleLowerCase() === city[2]|| favCity.toLocaleLowerCase() === city[3])
+if ( favCity.toLocaleLowerCase() === city[0] || 
+favCity.toLocaleLowerCase() === city[1] || 
+favCity.toLocaleLowerCase() === city[2] || 
+favCity.toLocaleLowerCase() === city[3] )
 {
     alert('true');
     score = score + 1 ;

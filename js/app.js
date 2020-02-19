@@ -99,22 +99,19 @@ for( var i = 0 ; i < 4 ; i++ ){
 // console.log(age);
 
 var city = ['salt','amman','irbid','madaba']
+var favCity = prompt('What is my Favorite city in jordan ?');
+if ( favCity.toLocaleLowerCase() === city[0] || favCity.toLocaleLowerCase() === city[1]|| favCity.toLocaleLowerCase() === city[2]|| favCity.toLocaleLowerCase() === city[3])
+{
+    alert('true');
+    score = score + 1 ;
 
-for ( var j = 0 ; j < 6 ; j++ ){
-    var favCity = prompt('What is my Favorite city in jordan ?');
-    if ( favCity.toLocaleLowerCase() === city[j] ){
-        alert('true');
-        score = score + 1 ;
-        {break};
+}
+else {
+    for ( var j = 0 ; j < 6 ; j++ ){
+        alert('Wrong answer; try out another one! *' + (5-j) + ' attempts left!' );
+        favCity = prompt('What is my Favorite city in jordan ?');
     }
-    
-    if (j == 5){
-        alert('No more attempts! these are my favorite cities: salt, amman, irbid, madaba.');
-    }
+}
 
-    else if (favCity.toLocaleLowerCase() !== city[j] ){
-            alert('Wrong answer; try out another one! *' + (5-j) + ' attempts left!' );
-        }
-     }           
-    
+  console.log(favCity);  
 alert('Your final score out of 7 is : ' + score);

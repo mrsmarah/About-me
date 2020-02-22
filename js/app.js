@@ -4,7 +4,7 @@ var score = 0 ;
 
 var username = prompt('Hello, it\'s Marah! What\'s your name ?');
 alert('Welcome to my page '+ username +' ! ');
-//console.log('Welcome to my page '+ username +' ! ');
+
 
 var favColor = prompt('Let\'s see how much you know about me! Does pink is my favorite color ?');
 if (favColor.toLocaleLowerCase() === "yes" || favColor.toLocaleLowerCase() === "y") {
@@ -17,7 +17,7 @@ else if (favColor.toLocaleLowerCase() === "no" || favColor.toLocaleLowerCase() =
 else {
     alert("sorry, you have to answer with yes or no.");
 }
-//console.log(favColor);
+
 
 var coding = prompt('Do you think I had a background in coding before this course ?');
 if (coding.toLocaleLowerCase() === "yes" || coding.toLocaleLowerCase() === "y") {
@@ -30,7 +30,7 @@ else if (coding.toLocaleLowerCase() ==="no" || coding.toLocaleLowerCase() === "n
 else {
     alert('sorry, you have to answer with yes/no or y/n.');
 }
-//console.log(coding);
+
 
 var pets = prompt('Do you think I love pets ?');
 if (pets.toLocaleLowerCase() === "yes" || pets.toLocaleLowerCase() === "y"){
@@ -43,7 +43,7 @@ else if (pets.toLocaleLowerCase() === "no" || pets.toLocaleLowerCase() === "n"){
 else {
     alert('sorry, you have to answer with yes/no or y/n.');
 }
-//console.log(pets);
+
 
 var season = prompt('Does summer is my favorite season ?');
 if (season.toLocaleLowerCase() === "yes" || season.toLocaleLowerCase() === "y") {
@@ -56,7 +56,7 @@ else if (season.toLocaleLowerCase() ==="no" || season.toLocaleLowerCase() === "n
 else {
     alert('sorry, you have to answer with yes/no or y/n.');
 }
-//console.log(season);
+
 
 var talent = prompt('Do you think I have a singing talent ?');
 if (talent.toLocaleLowerCase() === "yes" || talent.toLocaleLowerCase() === "y"){
@@ -69,12 +69,12 @@ else if (talent.toLocaleLowerCase() ==="no" || talent.toLocaleLowerCase() === "n
 else {
     alert('sorry, you have to answer with yes/no or y/n.');
 }
-// console.log(talent);
+
 
 for( var i = 0 ; i < 4 ; i++ ){
     var age = prompt('How old Do I look like ?');
     age = parseInt(age);
-    console.log( typeof age);
+    
     
     if (age === 23 ){
         alert('You\'re Right!');
@@ -96,7 +96,7 @@ for( var i = 0 ; i < 4 ; i++ ){
         }
           
 }
-// console.log(age);
+
 
 var city = ['salt','amman','irbid','madaba']
 var favCity = prompt('What is my Favorite city in jordan ?');
@@ -130,5 +130,5 @@ else {
     }
 }
 
-  console.log(favCity);  
+  
 alert('Your final score out of 7 is : ' + score);
